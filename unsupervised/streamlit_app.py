@@ -70,7 +70,7 @@ def load_model():
 def load_data():
     """Load the original customer data"""
     try:
-        df = pd.read_csv("Unsupervised_learning/Mall_Customers.csv")
+        df = pd.read_csv("unsupervised/Mall_Customers.csv")
         return df
     except FileNotFoundError:
         st.error("Data file not found.")
@@ -340,3 +340,4 @@ st.markdown("""
     </div>
 
 """, unsafe_allow_html=True)
+
